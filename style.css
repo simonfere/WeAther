@@ -1,9 +1,55 @@
+.navbar {
+
+    display: flex;
+
+}
+
+
 .search {
 
-    width: 100%;
+    width: 90%;
     border: 0px;
     font-size: 30px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: antiquewhite;
+    margin: 3px;
+
+}
+
+.forecast {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.today, .tomorrow, .day3, .day4, .day5 {
+
+    border: 1px solid black;
+    border-radius: 4px;
+    height: 400px;
+    width: 250px;
+    margin: 30px;
+    flex-shrink: 0;
+
+}
+
+.temperature {
+
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 32px;
+    font-weight: bold;    
+}
+
+.date {
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.botonbusqueda {
+
+    width: 10%;
 
 }
