@@ -8,34 +8,14 @@
     <title>WeAther</title>
 </head>
 <body>
-    <div class="navbar">
-        <input type="text" name="city" id="search" class="search" placeholder="Madrid, Londres, París, Pekin">
-        <button type="button" class="botonbusqueda">Buscar</button>
-    </div>
+    <form action="index.html" class="navbar" id="cityForm" method="get">
+        <input type="text" name="city" id="search" class="search" placeholder="Madrid, Londres, París, Pekin"/>
+        <input type="submit" value="submit" id="submit" placeholder="Search"/>
+    </form>
     <div class="forecast">
         <div class="today">
             <p class="date" id="date1"></p>
-            <p class="temperature">30º/22º</p>
-            <!--PICTURE OF WEATHER GOES THERE-->
-        </div>
-        <div class="tomorrow">
-            <p class="date" id="date2"></p>
-            <p class="temperature">28º/17º</p>
-            <!--PICTURE OF WEATHER GOES THERE-->
-        </div>
-        <div class="day3">
-            <p class="date" id="date3"></p>
-            <p class="temperature">24º/15º</p>
-            <!--PICTURE OF WEATHER GOES THERE-->
-        </div>
-        <div class="day4">
-            <p class="date" id="date4"></p>
-            <p class="temperature">24º/15º</p>
-            <!--PICTURE OF WEATHER GOES THERE-->
-        </div>
-        <div class="day5">
-            <p class="date" id="date5"></p>
-            <p class="temperature">24º/15º</p>
+            <p class="temperature" id="temp1"></p>
             <!--PICTURE OF WEATHER GOES THERE-->
         </div>
     </div>
