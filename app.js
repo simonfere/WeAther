@@ -9,7 +9,7 @@ date1.innerHTML = today;
 
 async function checkWeather () {
 
-    const response = await fetch(apiURL + city + '&appid=' + apiKey);
+    const response = await fetch(apiURL + city + '&appid=' + atob(atob(apiKey)));
     data = await response.json();
     console.log(data);
 
@@ -30,6 +30,12 @@ async function checkWeather () {
     var temptodayHTML = document.getElementById("temp1");
     temptodayHTML.innerHTML = temptoday;
 
+    var iconcode = data.weather[0].icon;
+
+    var iconurl = "http://openweathermap.org/img/w/" + iconcode + ".png";
+
+    document.getElementById("wicon").setAttribute("src", iconurl);
+
 }
 
 
@@ -49,7 +55,7 @@ cityForm.addEventListener("submit", function (e) {
 
 
 const apiURL = "http://api.openweathermap.org/data/2.5/weather?q="
-const apiKey = "9dbcead64ae21beedb2e0b6527bffd43"
+const apiKey = "T1dSaVkyVmhaRFkwWVdVeU1XSmxaV1JpTW1Vd1lqWTFNamRpWm1aa05ETT0="
 
 
 var data;

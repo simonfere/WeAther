@@ -1,3 +1,8 @@
+body {
+
+    background-image: url("https://picjumbo.com/wp-content/uploads/beautiful-green-field-scenery-free-photo-2210x1473.jpg");
+}
+
 .navbar {
 
     display: flex;
@@ -8,11 +13,11 @@
 .search {
 
     width: 90%;
-    border: 0px;
+    border-color: black;
+    border-style: groove;
     font-size: 30px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: antiquewhite;
-    margin: 3px;
+    background: transparent;
 
 }
 
@@ -20,6 +25,7 @@
 
     display: flex;
     justify-content: center;
+    backdrop-filter: blur(10px);
 
 }
 
@@ -45,11 +51,22 @@
 .date {
 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    margin-left: 15px;
 
 }
 
-.botonbusqueda {
+.boton {
 
-    width: 10%;
+    backdrop-filter: blur(100px);
+    margin-left: 30px;
+}
+
+.wicon {
+
+    margin-left: 25px;
+    margin-top: 8px;
+    width: 200px;
+    height: 200px;
 
 }

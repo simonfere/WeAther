@@ -1,13 +1,13 @@
-This is the commit log:
+# This is WeAther 1.0
+This app was made to test my habilities of JavaScript . It's quite simple: it shows you the weather of the day and a picture of it. 
 
-## Day 1
 
-First commit, page design sketch and API key setting.
+## Pure API work
 
-## Day 2
+I worked with the OpenWeatherMap's API. As you can see, the pictures are picked from the API; that means low quality, so it'll be improved in future versions.
 
-Date system with JavaScript, some testing with the API and formatting.
+## Best way to experience
 
-## Day 3
+This version is focused on the smartphone view of the app.
 
-Removed all except the first day, will add later. Some problems at the start, when no city given it keeps blank. API async function done, event listener for the form done. Alert when the city doesn't exist.
+### Enjoy and stay safe!
