@@ -1,3 +1,5 @@
+import { OpenWeatherMapAPI as key} from "./private/apikey.js";
+
 let hoy = new Date();
 
 var today = hoy;
@@ -9,7 +11,7 @@ date1.innerHTML = today;
 
 async function checkWeather () {
 
-    const response = await fetch(apiURL + city + '&appid=' + atob(atob(apiKey)));
+    const response = await fetch(apiURL + city + '&appid=' + key );
     data = await response.json();
     console.log(data);
 
@@ -38,7 +40,7 @@ async function checkWeather () {
 
 }
 
-
+var city;
 
 
 let cityForm = document.getElementById("cityForm");
@@ -55,7 +57,6 @@ cityForm.addEventListener("submit", function (e) {
 
 
 const apiURL = "http://api.openweathermap.org/data/2.5/weather?q="
-const apiKey = "T1dSaVkyVmhaRFkwWVdVeU1XSmxaV1JpTW1Vd1lqWTFNamRpWm1aa05ETT0="
 
 
 var data;
