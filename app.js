@@ -17,8 +17,9 @@ async function checkWeather () {
 
     const response = await fetch(apiURL + city + '&appid=' + key );
     data = await response.json();
+    console.log(data)
 
-    if (data.cod === 404) {
+    if (data.cod === "404") {
 
         alert("This city doesn't exist.")
 
