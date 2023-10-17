@@ -9,15 +9,15 @@
 </head>
 <body>
     <form action="index.html" class="navbar" id="cityForm" method="get">
-        <input type="text" name="city" id="search" class="search" placeholder="Madrid, Londres, París, Pekin"/>
+        <input type="text" name="city" id="search" class="search" placeholder="Busca tu ciudad aquí..."/>
         <input type="submit" value="Buscar" id="submit" class="boton"/>
     </form>
     <div class="forecast">
         <div class="today">
             <p class="date" id="date1"></p>
-            <p class="temperature" id="temp1"></p>
+            <p class="temperature" id="temp1">23º/12º</p>
             <!--PICTURE OF WEATHER GOES THERE-->
-            <img id="wicon" class="wicon">
+            <img id="wicon" class="wicon" alt="weatherPic" src="http://openweathermap.org/img/w/10n.png">
         </div>
     </div>
     <script src="app.js" type="module"></script>
