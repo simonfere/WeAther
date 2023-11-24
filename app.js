@@ -38,9 +38,9 @@ async function checkWeather () {
 
     const iconcode = data.weather[0].icon;
 
-    const iconurl = "http://openweathermap.org/img/w/" + iconcode + ".png";
+    const finalIcon = iconURL + iconcode + ".png";
 
-    document.getElementById("wicon").setAttribute("src", iconurl);
+    document.getElementById("wicon").setAttribute("src", finalIcon);
 
 }
 
@@ -57,7 +57,8 @@ cityForm.addEventListener("submit", function (e) {
 });
 
 
-const apiURL = "http://api.openweathermap.org/data/2.5/weather?q="
+const apiURL = "http://api.openweathermap.org/data/2.5/weather?q=";
+const iconURL = "http://openweathermap.org/img/w/";
 
 
 

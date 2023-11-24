@@ -46,6 +46,9 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 32px;
     font-weight: bold;    
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 .date {
@@ -68,5 +71,8 @@ body {
     margin-top: 8px;
     width: 200px;
     height: 200px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 
 }
